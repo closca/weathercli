@@ -16,3 +16,7 @@ To run the app:\
 ####Run with coverage
 Assure that you have the needed dependencies as per https://pestphp.com/docs/coverage/ \
 ```./vendor/bin/pest --coverage```
+
+
+##Documentation
+You can find the documentation generated in `./docs`. The documentation was generated using PhpDox (http://phpdox.de/)
