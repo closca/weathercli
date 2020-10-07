@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="WeatherCLI\CommandRegistry" namespace="WeatherCLI" name="CommandRegistry" abstract="false" final="false" start="15" end="98">
+  <file path="/home/vagrant/Code/weather-cli/lib" file="CommandRegistry.php" realpath="/home/vagrant/Code/weather-cli/lib/CommandRegistry.php" size="2425" time="2020-10-07T20:31:27+00:00" unixtime="1602102687" sha1="e51b0551bf3ade1c2b4107f2ecb35ae6c717d0ea" relative="lib/CommandRegistry.php"/>
+  <docblock>
+    <description compact="Class CommandRegistry is designed as a repository for controllers and commands. It is helping on scaling up the app in order to be able to add other commands with ease."/>
+    <package value="WeatherCLI"/>
+    <author value="Costel"/>
+    <license name="NA"/>
+  </docblock>
+  <member name="registry" default="" type="array" visibility="protected" static="false" line="22">
+    <docblock>
+      <description compact="Array which will store the commands (string)"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="controllers" default="" type="array" visibility="public" static="false" line="29">
+    <docblock>
+      <description compact="Array which will store the instances of the CommandController's"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="registerController" start="37" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This method is allowing to register a controller and map it with a command"/>
+      <param variable="$command_name"/>
+      <param type="object" variable="$controller">
+        <type full="WeatherCLI\CommandController" namespace="WeatherCLI" name="CommandController"/>
+      </param>
+    </docblock>
+    <parameter name="command_name" byreference="false" type="{unknown}"/>
+    <parameter name="controller" byreference="false" type="object">
+      <type full="WeatherCLI\CommandController" namespace="WeatherCLI" name="CommandController"/>
+    </parameter>
+  </method>
+  <method name="registerCommand" start="48" end="51" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This method is allowing to register a command with a callable function"/>
+      <param variable="$name"/>
+      <param variable="$callable"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="callable" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getController" start="59" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Will return the CommandController by command string"/>
+      <param variable="$command"/>
+      <return type="object">
+        <type full="WeatherCLI\CommandController|null" namespace="WeatherCLI" name="CommandController|null"/>
+      </return>
+    </docblock>
+    <parameter name="command" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getCommand" start="70" end="73" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This method will return the command callback"/>
+      <param variable="$command"/>
+      <return type="object">
+        <type full="WeatherCLI\callable|null" namespace="WeatherCLI" name="callable|null"/>
+      </return>
+    </docblock>
+    <parameter name="command" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getCallable" start="83" end="97" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="get the callable method from by command name. Can be the run method from a CommandController instance or the callable callback from registerCommand()"/>
+      <param variable="$command_name"/>
+      <return type="object">
+        <type full="WeatherCLI\CommandController|Callable" namespace="WeatherCLI" name="CommandController|Callable"/>
+      </return>
+      <throws type="object">
+        <type full="\Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <parameter name="command_name" byreference="false" type="{unknown}"/>
+  </method>
+</class>

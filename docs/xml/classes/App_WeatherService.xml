@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\WeatherService" namespace="App" name="WeatherService" abstract="false" final="false" start="17" end="59">
+  <file path="/home/vagrant/Code/weather-cli/app" file="WeatherService.php" realpath="/home/vagrant/Code/weather-cli/app/WeatherService.php" size="1290" time="2020-10-07T20:37:36+00:00" unixtime="1602103056" sha1="4f562e047dda77c07e53c722400201ea0f92fd11" relative="app/WeatherService.php"/>
+  <docblock>
+    <description compact="Class WeatherService - http service using Guzzle  - we use this class to communicate with the weather data provider"/>
+    <package value="App"/>
+    <author value="Costel"/>
+    <license name="NA"/>
+  </docblock>
+  <member name="host" default="'https://api.openweathermap.org'" type="string" visibility="private" static="false" line="23">
+    <docblock>
+      <description compact="The API host"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="key" default="'c0f764ce5e4c25576b8d6325fc223810'" type="string" visibility="private" static="false" line="28">
+    <docblock>
+      <description compact="The API key"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="client" visibility="private" static="false" line="32">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="GuzzleHttp\Client" namespace="GuzzleHttp" name="Client"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="37" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="WeatherService constructor."/>
+    </docblock>
+  </constructor>
+  <method name="getWeather" start="50" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This method will make the http get call and will retrieve the data in associative array if possible."/>
+      <param variable="$city"/>
+      <return type="object">
+        <type full="\Exception|GuzzleException|mixed" namespace="" name="Exception|GuzzleException|mixed"/>
+      </return>
+    </docblock>
+    <parameter name="city" byreference="false" type="{unknown}"/>
+  </method>
+</class>

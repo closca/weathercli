@@ -1,0 +1,24 @@
+{
+  "name": "vendor_name/wheather-cli",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "closcacostel",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "WeatherCLI\\": "lib/",
+      "App\\": "app/"
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^0.3.8"
+  }
+}

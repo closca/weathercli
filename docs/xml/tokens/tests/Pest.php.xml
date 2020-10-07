@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/home/vagrant/Code/weather-cli/tests" file="Pest.php" realpath="/home/vagrant/Code/weather-cli/tests/Pest.php" size="13" time="2020-10-07T17:10:10+00:00" unixtime="1602090610" sha1="2263f08e0cfb054608c1ac1f740006a1726262b5" relative="tests/Pest.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_COMMENT">// ..</token>
+  </line>
+  <line no="4"/>
+</source>

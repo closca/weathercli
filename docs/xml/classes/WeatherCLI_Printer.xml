@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="WeatherCLI\Printer" namespace="WeatherCLI" name="Printer" abstract="false" final="false" start="14" end="82">
+  <file path="/home/vagrant/Code/weather-cli/lib" file="Printer.php" realpath="/home/vagrant/Code/weather-cli/lib/Printer.php" size="1604" time="2020-10-07T20:34:41+00:00" unixtime="1602102881" sha1="13c7ebfd6dda761afe47f19e94233dd9dfff585a" relative="lib/Printer.php"/>
+  <docblock>
+    <description compact="Class Printer is designed to help printing the output into the CLI."/>
+    <package value="WeatherCLI"/>
+    <author value="Costel"/>
+    <license name="NA"/>
+  </docblock>
+  <constant type="integer" name="MODE_CLEAN" value="0">
+    <docblock>
+      <description compact="Constant for mode clean - means that will print with break lines."/>
+    </docblock>
+  </constant>
+  <constant type="integer" name="MODE_NO_NEW_LINE" value="1">
+    <docblock>
+      <description compact="Constant for mode no new line - we need this to make our life easier on unit tests."/>
+    </docblock>
+  </constant>
+  <member name="printerMode" default="" type="{unknown}" constant="self::MODE_CLEAN" visibility="private" static="false" line="29">
+    <docblock>
+      <description compact="Printer mode - default clean"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <method name="out" start="36" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This method will print the $message"/>
+      <param variable="$message"/>
+    </docblock>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="newline" start="44" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Print new line - helper method."/>
+    </docblock>
+  </method>
+  <method name="display" start="53" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The main callable method from the Printer class. Based on printerMode property can print with new lines or not."/>
+      <param variable="$message"/>
+    </docblock>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setMode" start="70" end="72" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="setter for printerMode"/>
+      <param type="int" variable="$mode"/>
+    </docblock>
+    <parameter name="mode" byreference="false" type="{unknown}" default="" constant="self::MODE_CLEAN"/>
+  </method>
+  <method name="getMode" start="79" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="getter for printerMode"/>
+      <return type="int"/>
+    </docblock>
+  </method>
+</class>

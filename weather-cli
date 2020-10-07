@@ -1,0 +1,14 @@
+#!/usr/bin/php
+<?php
+
+if (php_sapi_name() !== 'cli') {
+    exit;
+}
+
+require __DIR__ . '/vendor/autoload.php';
+
+$app = new \WeatherCLI\App();
+
+$app->registerController('weather', new \App\Command\WeatherController($app));
+
+$app->runCommand($argv);

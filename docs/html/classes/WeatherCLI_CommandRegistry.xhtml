@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - WeatherCLI\CommandRegistry</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#WeatherCLI">WeatherCLI</a>
+          </li>
+          <li class="separator">CommandRegistry</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/lib/CommandRegistry.php.xhtml#line15">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>WeatherCLI\</small>CommandRegistry</h1>
+        <h4>Class CommandRegistry is designed as a repository for controllers and commands. It is helping on scaling up the app in order to be able to add other commands with ease.</h4>
+        <p/>
+        <ul>
+          <li>Author: Costel</li>
+          <li>License: NA</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class CommandRegistry
+            {<br/><ul class="none"><li>// members</li><li>protected array <a href="#members">$registry</a> =
+                        ;
+                    </li><li>public array <a href="#members">$controllers</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/registerController.xhtml">registerController</a>()
+                    </li><li>public void <a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/registerCommand.xhtml">registerCommand</a>()
+                    </li><li>public CommandController|null <a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/getController.xhtml">getController</a>()
+                    </li><li>public callable|null <a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/getCommand.xhtml">getCommand</a>()
+                    </li><li>public CommandController|Callable <a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/getCallable.xhtml">getCallable</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="registry"><strong>$registry</strong>
+                —
+                array<br/><span class="indent">Array which will store the commands (string)</span></li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="controllers"><strong>$controllers</strong>
+                —
+                array<br/><span class="indent">Array which will store the instances of the CommandController's</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="getCallable"><a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/getCallable.xhtml">getCallable()</a>
+                — get the callable method from by command name. Can be the run method from a CommandController instance or the callable callback from registerCommand()</li>
+            <li id="getCommand"><a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/getCommand.xhtml">getCommand()</a>
+                — This method will return the command callback</li>
+            <li id="getController"><a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/getController.xhtml">getController()</a>
+                — Will return the CommandController by command string</li>
+            <li id="registerCommand"><a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/registerCommand.xhtml">registerCommand()</a>
+                — This method is allowing to register a command with a callable function</li>
+            <li id="registerController"><a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry/registerController.xhtml">registerController()</a>
+                — This method is allowing to register a controller and map it with a command</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2020 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

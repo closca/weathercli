@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - WeatherCLI\App</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#WeatherCLI">WeatherCLI</a>
+          </li>
+          <li class="separator">App</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/lib/App.php.xhtml#line10">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>WeatherCLI\</small>App</h1>
+        <h4>The application main class. This class will help running the commands, instantiate printers.</h4>
+        <p/>
+        <ul>
+          <li>Author: Costel</li>
+          <li>License: NA</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class App
+            {<br/><ul class="none"><li>// members</li><li>private <span title="WeatherCLI\Printer">Printer</span> <a href="#members">$printer</a>;
+                    </li><li>public <span title="WeatherCLI\CommandRegistry">CommandRegistry</span> <a href="#members">$command_registry</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="WeatherCLI\App" href="../classes/WeatherCLI_App/__construct.xhtml">__construct</a>()
+                    </li><li>public Printer <a title="WeatherCLI\App" href="../classes/WeatherCLI_App/getPrinter.xhtml">getPrinter</a>()
+                    </li><li>public void <a title="WeatherCLI\App" href="../classes/WeatherCLI_App/registerController.xhtml">registerController</a>()
+                    </li><li>public void <a title="WeatherCLI\App" href="../classes/WeatherCLI_App/registerCommand.xhtml">registerCommand</a>()
+                    </li><li>public void <a title="WeatherCLI\App" href="../classes/WeatherCLI_App/runCommand.xhtml">runCommand</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="printer"><strong>$printer</strong>
+                —
+                <a title="WeatherCLI\Printer" href="../classes/WeatherCLI_Printer.xhtml">WeatherCLI\Printer</a><br/><span class="indent">Printer class instance</span></li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="command_registry"><strong>$command_registry</strong>
+                —
+                <a title="WeatherCLI\CommandRegistry" href="../classes/WeatherCLI_CommandRegistry.xhtml">WeatherCLI\CommandRegistry</a><br/><span class="indent">CommandRegistry class instance</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="WeatherCLI\App" href="../classes/WeatherCLI_App/__construct.xhtml">__construct()</a>
+                — App constructor.</li>
+            <li id="getPrinter"><a title="WeatherCLI\App" href="../classes/WeatherCLI_App/getPrinter.xhtml">getPrinter()</a>
+                — retrieve printer instance</li>
+            <li id="registerCommand"><a title="WeatherCLI\App" href="../classes/WeatherCLI_App/registerCommand.xhtml">registerCommand()</a>
+                — You can register commands into the app with a callback</li>
+            <li id="registerController"><a title="WeatherCLI\App" href="../classes/WeatherCLI_App/registerController.xhtml">registerController()</a>
+                — Register controller into the app</li>
+            <li id="runCommand"><a title="WeatherCLI\App" href="../classes/WeatherCLI_App/runCommand.xhtml">runCommand()</a>
+                — This method will run a command. It's checking first if there is a command into the arguments, and has the capability to run a default command.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2020 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

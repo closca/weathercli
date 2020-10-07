@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/vagrant/Code/weather-cli">
+  <namespace name="App">
+    <class name="WeatherService" src="app/WeatherService.php" description="Class WeatherService - http service using Guzzle  - we use this class to communicate with the weather data provider" xml="classes/App_WeatherService.xml"/>
+  </namespace>
+  <namespace name="App\Command">
+    <class name="WeatherController" src="app/Command/WeatherController.php" description="Class WeatherController" xml="classes/App_Command_WeatherController.xml"/>
+  </namespace>
+  <namespace name="WeatherCLI">
+    <class name="CommandController" src="lib/CommandController.php" description="Class CommandController is a abstract class, which we use as model for the controllers" xml="classes/WeatherCLI_CommandController.xml"/>
+    <class name="App" src="lib/App.php" description="The application main class. This class will help running the commands, instantiate printers." xml="classes/WeatherCLI_App.xml"/>
+    <class name="CommandRegistry" src="lib/CommandRegistry.php" description="Class CommandRegistry is designed as a repository for controllers and commands. It is helping on scaling up the app in order to be able to add other commands with ease." xml="classes/WeatherCLI_CommandRegistry.xml"/>
+    <class name="Printer" src="lib/Printer.php" description="Class Printer is designed to help printing the output into the CLI." xml="classes/WeatherCLI_Printer.xml"/>
+  </namespace>
+</index>

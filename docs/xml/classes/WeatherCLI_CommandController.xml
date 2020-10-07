@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="WeatherCLI\CommandController" namespace="WeatherCLI" name="CommandController" abstract="true" final="false" start="13" end="44">
+  <file path="/home/vagrant/Code/weather-cli/lib" file="CommandController.php" realpath="/home/vagrant/Code/weather-cli/lib/CommandController.php" size="684" time="2020-10-07T20:27:39+00:00" unixtime="1602102459" sha1="b1d4a6c3f20e3377813cd1788c1e231c1d259ed9" relative="lib/CommandController.php"/>
+  <docblock>
+    <description compact="Class CommandController is a abstract class, which we use as model for the controllers"/>
+    <package value="WeatherCLI"/>
+    <author value="Costel"/>
+    <license name="NA"/>
+  </docblock>
+  <member name="app" visibility="protected" static="false" line="18">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="run" start="24" end="24" abstract="true" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$argv"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="argv" byreference="false" type="{unknown}"/>
+  </method>
+  <constructor name="__construct" start="30" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="CommandController constructor."/>
+      <param type="object" variable="$app">
+        <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+      </param>
+    </docblock>
+    <parameter name="app" byreference="false" type="object">
+      <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+    </parameter>
+  </constructor>
+  <method name="getApp" start="40" end="43" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Retrieves the app instance"/>
+      <return type="object">
+        <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+      </return>
+    </docblock>
+  </method>
+  <extenders>
+    <extender full="App\Command\WeatherController" namespace="App\Command" name="WeatherController"/>
+  </extenders>
+</class>

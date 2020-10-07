@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<source xmlns="http://xml.phpdox.net/src">
+  <dir name="/home/vagrant/Code/weather-cli">
+    <dir name="app">
+      <file name="WeatherService.php" size="1290" time="2020-10-07T20:37:36+00:00" unixtime="1602103056" sha1="4f562e047dda77c07e53c722400201ea0f92fd11" xml="tokens/app/WeatherService.php.xml"/>
+      <dir name="Command">
+        <file name="WeatherController.php" size="1411" time="2020-10-07T20:39:30+00:00" unixtime="1602103170" sha1="808171e9f466b3f1e142f78fc7bb18462ae35ff0" xml="tokens/app/Command/WeatherController.php.xml"/>
+      </dir>
+    </dir>
+    <dir name="tests">
+      <file name="AppTest.php" size="1285" time="2020-10-07T19:21:50+00:00" unixtime="1602098510" sha1="da7711fae0c592a01fb9b8a07cf1eccdb87e3347" xml="tokens/tests/AppTest.php.xml"/>
+      <file name="PrinterTest.php" size="1105" time="2020-10-07T19:12:42+00:00" unixtime="1602097962" sha1="019867e950270ff2ab4c522bddd16b138a641eed" xml="tokens/tests/PrinterTest.php.xml"/>
+      <file name="WeatherControllerTest.php" size="1214" time="2020-10-07T18:39:27+00:00" unixtime="1602095967" sha1="2d74ccfe8a4e3e005f6ea58751b6318556f0c834" xml="tokens/tests/WeatherControllerTest.php.xml"/>
+      <file name="CommandRegistryTest.php" size="1283" time="2020-10-07T19:01:44+00:00" unixtime="1602097304" sha1="e21403d87136fda39ec7e76527855840c762a6ff" xml="tokens/tests/CommandRegistryTest.php.xml"/>
+      <file name="Helpers.php" size="222" time="2020-10-07T19:22:36+00:00" unixtime="1602098556" sha1="ee0a8de6975531b2ad6c8c1c08ea3660d95eff3f" xml="tokens/tests/Helpers.php.xml"/>
+      <file name="Pest.php" size="13" time="2020-10-07T17:10:10+00:00" unixtime="1602090610" sha1="2263f08e0cfb054608c1ac1f740006a1726262b5" xml="tokens/tests/Pest.php.xml"/>
+    </dir>
+    <dir name="lib">
+      <file name="CommandController.php" size="684" time="2020-10-07T20:27:39+00:00" unixtime="1602102459" sha1="b1d4a6c3f20e3377813cd1788c1e231c1d259ed9" xml="tokens/lib/CommandController.php.xml"/>
+      <file name="App.php" size="2035" time="2020-10-07T20:23:32+00:00" unixtime="1602102212" sha1="e9b4034e071fa5b0b559e2894b74d394e4df35a1" xml="tokens/lib/App.php.xml"/>
+      <file name="CommandRegistry.php" size="2425" time="2020-10-07T20:31:27+00:00" unixtime="1602102687" sha1="e51b0551bf3ade1c2b4107f2ecb35ae6c717d0ea" xml="tokens/lib/CommandRegistry.php.xml"/>
+      <file name="Printer.php" size="1604" time="2020-10-07T20:34:41+00:00" unixtime="1602102881" sha1="13c7ebfd6dda761afe47f19e94233dd9dfff585a" xml="tokens/lib/Printer.php.xml"/>
+    </dir>
+  </dir>
+</source>

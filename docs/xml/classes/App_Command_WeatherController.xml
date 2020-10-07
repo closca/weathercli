@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Command\WeatherController" namespace="App\Command" name="WeatherController" abstract="false" final="false" start="17" end="62">
+  <file path="/home/vagrant/Code/weather-cli/app/Command" file="WeatherController.php" realpath="/home/vagrant/Code/weather-cli/app/Command/WeatherController.php" size="1411" time="2020-10-07T20:39:30+00:00" unixtime="1602103170" sha1="808171e9f466b3f1e142f78fc7bb18462ae35ff0" relative="app/Command/WeatherController.php"/>
+  <docblock>
+    <description compact="Class WeatherController"/>
+    <package value="App\Command"/>
+    <author value="Costel"/>
+    <license name="NA"/>
+  </docblock>
+  <extends full="WeatherCLI\CommandController" namespace="WeatherCLI" name="CommandController"/>
+  <member name="weatherService" visibility="protected" static="false" line="24">
+    <docblock>
+      <description compact="Instance of the data service provider"/>
+      <var type="object">
+        <type full="App\WeatherService" namespace="App" name="WeatherService"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="30" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="WeatherController constructor."/>
+      <param type="object" variable="$app">
+        <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+      </param>
+    </docblock>
+    <parameter name="app" byreference="false" type="object">
+      <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+    </parameter>
+  </constructor>
+  <method name="run" start="42" end="61" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="the callable method form the controller"/>
+      <param variable="$argv"/>
+      <return type="object">
+        <type full="App\Command\mixed|void" namespace="App\Command" name="mixed|void"/>
+      </return>
+    </docblock>
+    <parameter name="argv" byreference="false" type="{unknown}"/>
+  </method>
+  <parent full="WeatherCLI\CommandController" namespace="WeatherCLI" name="CommandController">
+    <member name="app" visibility="protected" static="false" line="18">
+      <docblock>
+        <description/>
+        <var type="object">
+          <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+        </var>
+      </docblock>
+    </member>
+    <method name="run" start="24" end="24" abstract="true" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param variable="$argv"/>
+        <return type="mixed"/>
+      </docblock>
+      <parameter name="argv" byreference="false" type="{unknown}"/>
+    </method>
+    <constructor name="__construct" start="30" end="33" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="CommandController constructor."/>
+        <param type="object" variable="$app">
+          <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+        </param>
+      </docblock>
+      <parameter name="app" byreference="false" type="object">
+        <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+      </parameter>
+    </constructor>
+    <method name="getApp" start="40" end="43" abstract="false" final="false" static="false" visibility="protected">
+      <docblock>
+        <description compact="Retrieves the app instance"/>
+        <return type="object">
+          <type full="WeatherCLI\App" namespace="WeatherCLI" name="App"/>
+        </return>
+      </docblock>
+    </method>
+  </parent>
+</class>
